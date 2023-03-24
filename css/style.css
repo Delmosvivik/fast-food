@@ -79,6 +79,7 @@ font-weight: 500;
 font-size: 16px;
 padding: 15px 36px;
 color:#FFFFFF;
+border-style: none;
 }
 .hero__content {
     max-width: 49%;
@@ -112,17 +113,237 @@ color: rgb(255, 255, 255, 0.7);
 margin-bottom: 42px;
 }
 .food {
-
+padding: 115px 0px 102px;
 }
 .food__list {
+    display: flex;
+    justify-content: space-between;
 }
-.item {
+.food__item {
+    width: 23%;
+    background-color: rgba(49, 47, 48, 1);
+    border-radius: 10px;
+    overflow: hidden;
 }
-.food__img-wrap {
+.dish__img-wrap {
+    overflow: hidden;
+    width: 100%;
+    height: 172px;
 }
-.food__img {
+.dish__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
-.food__dish-title {
+.dish__desc {
+    padding: 30px;
+    text-align: center;
 }
-.food__dish-desc {
+.dish__title {
+font-weight: 500;
+font-size: 20px;
+line-height: 23px;
+margin-bottom: 13px;
+}
+.dish__text {
+   
+}
+.paragraph {
+ font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+.order {
+    padding: 73px 0px 0px 85px;
+    background: #312F30;
+}
+.order__content {
+    display: flex;
+    align-items: center;
+}
+.order__img-wrap {
+}
+.order__img {
+}
+.order-info {
+    max-width: 371px;
+    margin-left: 98px;
+}
+.order__column{
+    width: 50%;
+}
+.order__title {
+    font-weight: 500;
+font-size: 44.2px;
+line-height: 52px;
+margin-bottom: 24px;
+}
+.order__text {
+    margin-bottom: 13px;
+}
+.price {
+font-weight: 500;
+}
+.order__price{
+    margin-bottom: 11px;
+}
+.price__new {
+    font-weight: 500;
+font-size: 20px;
+line-height: 1.15;
+letter-spacing: 0.1em;
+color: #F6762C;
+
+}
+.price__old {
+    font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.19px;
+letter-spacing: 0.1em;
+text-decoration-line: line-through;
+color: rgba(246, 118, 44, 0.5);
+}
+.product {
+    padding: 150px 0px 146px;
+}
+.product__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+.product__item {
+    width: 48%;
+    height: 300px;
+}
+.product__item:nth-child(even) .offer__content{
+right: auto;
+left: 50px;
+}
+.offer {
+position: relative;
+}
+.offer__img-wrap {
+    width: 100%;
+    height: 100%;
+}
+.offer__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.offer__content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    width: 47%;
+    padding-right: 20px;
+}
+.offer__title {
+}
+.offer__paragraph {
+}
+.price {
+}
+.offer__price {
+}
+.price__new {
+}
+.offer__price-new {
+}
+.price__old {
+}
+.offer__btn {
+}
+.feedback {
+padding: 146px 0px 194px;
+}
+.feedback__container{
+    display: flex;
+}
+.feedback__column {
+width: 50%;
+}
+.avatars {
+border: 1px dashed rgba(246, 118, 44, 0.3);
+width: 346px;
+height: 346px;
+position: relative;
+border-radius:50% ;
+}
+.avatars::after {
+    position: absolute;
+    border: inherit;
+    content:"";
+    display: block;
+    width: 230px;
+    height: 230px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: inherit;
+}
+.avatar {
+width: 85px;
+height: 85px;
+overflow: hidden;
+border-radius: 50%;
+
+}
+.feedback__avatar {
+position: absolute;
+}
+.feedback__avatar:nth-child(1) {
+   top: 50%;
+   transform: translate(-50%,-50%);
+}
+.feedback__avatar:nth-child(2) {
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 71px;
+    height: 71px;
+ }
+ .feedback__avatar:nth-child(3) {
+   top: 50%;
+   right: 0px;
+    transform: translate(50%,-50%);
+    
+ }
+ .feedback__avatar:nth-child(4) {
+   left: 50%;
+   bottom: 0px;
+    transform: translate(-50%,50%);
+ }
+ .feedback__avatar:nth-child(5) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ }
+ .feedback__avatar .avatar__img {
+    transform: rotate(65deg);
+ }
+.avatar__link {
+
+}
+.avatar__img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: top center;
+}
+.review {
+
+}
+.review__text {
+
+}
+.review__user-name {
+
+}
+.review__user-info {
+
 }

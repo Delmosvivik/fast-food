@@ -264,6 +264,7 @@ padding: 146px 0px 194px;
 }
 .feedback__container{
     display: flex;
+    align-items: center;
 }
 .feedback__column {
 width: 50%;
@@ -324,7 +325,7 @@ position: absolute;
     transform: translate(-50%,-50%);
  }
  .feedback__avatar .avatar__img {
-    transform: rotate(65deg);
+   
  }
 .avatar__link {
 
@@ -336,7 +337,32 @@ object-fit: cover;
 object-position: top center;
 }
 .review {
-
+min-width: 368px;
+text-align: center;
+position: relative;
+}
+.review::before {
+    content: "";
+    display: block;
+    width: 43px;
+    height: 43px;
+    background-color: rgba(246, 118, 44, 0.1);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, calc(-100% - 40px));
+}
+.review::after{
+    content: "";
+    display: block;
+    width: 43px;
+    height: 43px;
+    background: url(../img/icons/кавычки.svg) center/contain no-repeat;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(calc(-50% - 10px), calc(-100% - 37px));
 }
 .review__text {
 

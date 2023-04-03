@@ -8,6 +8,7 @@ body {
 body {
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
+    background-color: #F6762C;
 }
 .wrapper {
     min-height: 100%;
@@ -372,4 +373,41 @@ position: relative;
 }
 .review__user-info {
 
+}
+.footer {
+}
+.container {
+}
+.footer__container {
+}
+.footer__contact {
+}
+.logo {
+}
+.logo__pic {
+}
+.block-link {
+}
+.block-link__icon {
+}
+.block-link__link {
+}
+.footer__nav {
+    display: flex;
+}
+.footer__nav-col {
+}
+.footer__nav-title {
+}
+.footer__list {
+}
+.footer__item {
+}
+.footer__nav-link {
+}
+.social {
+}
+.social__item {
+}
+.social__link {
 }
